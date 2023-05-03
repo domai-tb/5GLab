@@ -1,0 +1,153 @@
+Cloning into 'prometheus-client-c'...
+Switched to a new branch 'open5gs'
+Cloning into 'freeDiameter'...
+Switched to a new branch 'r1.5.0'
+Generating targets:   0%|                                                    | 0/97 [00:00<?, ?it/s]Generating targets:  24%|█████████▉                                | 23/97 [00:00<00:00, 227.21it/s]Generating targets:  47%|████████████████████▍                      | 46/97 [00:01<00:01, 29.93it/s]Generating targets:  73%|███████████████████████████████▍           | 71/97 [00:01<00:00, 50.42it/s]Generating targets:  93%|███████████████████████████████████████▉   | 90/97 [00:01<00:00, 66.82it/s]                                                                                                    Writing build.ninja:   0%|                                                 | 0/3950 [00:00<?, ?it/s]Writing build.ninja:  30%|██████████▋                        | 1200/3950 [00:00<00:00, 11996.95it/s]Writing build.ninja:  61%|█████████████████████▎             | 2412/3950 [00:00<00:00, 12068.76it/s]Writing build.ninja:  92%|████████████████████████████████▎  | 3640/3950 [00:00<00:00, 12163.29it/s]                                                                                                    ./build_5glab.sh:54: no such file or directory: ./../Desktop/5gs_tun_setup.sh
+./build_5glab.sh:64: no such file or directory: /home/tim/Research/5G/projects/open5gss/docs/assets/webui/install
+CMake Deprecation Warning at CMakeLists.txt:31 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning (dev) at cmake/modules/FindQwt.cmake:104 (SET):
+  implicitly converting 'DOC' to 'STRING' type.
+Call Stack (most recent call first):
+  src/CMakeLists.txt:7 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at CMakeLists.txt:31 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning (dev) at cmake/modules/FindQwt.cmake:104 (SET):
+  implicitly converting 'DOC' to 'STRING' type.
+Call Stack (most recent call first):
+  src/CMakeLists.txt:7 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+In file included from /home/tim/Research/5G/projects/srsGUI/src/common/Spectrogramplot.cpp:5:
+/usr/include/qwt/qwt_plot_layout.h:84:51: warning: ‘constexpr QFlags<T>::QFlags(Zero) [with Enum = QwtPlotLayout::Option; Zero = int QFlags<QwtPlotLayout::Option>::Private::*]’ is deprecated: Use default constructor instead [-Wdeprecated-declarations]
+   84 |         const QRectF &plotRect, Options options = 0x00 );
+      |                                                   ^~~~
+In file included from /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h:1305,
+                 from /usr/include/qwt/qwt_global.h:13,
+                 from /usr/include/qwt/qwt_color_map.h:13,
+                 from /home/tim/Research/5G/projects/srsGUI/src/common/Spectrogramplot.cpp:1:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h:123:80: note: declared here
+  123 |     QT_DEPRECATED_X("Use default constructor instead") Q_DECL_CONSTEXPR inline QFlags(Zero) noexcept : i(0) {}
+      |                                                                                ^~~~~~
+/home/tim/Research/5G/projects/srsGUI/src/common/Spectrogramplot.cpp: In constructor ‘Spectrogramplot::Spectrogramplot(int, int, QWidget*)’:
+/home/tim/Research/5G/projects/srsGUI/src/common/Spectrogramplot.cpp:101:33: warning: ‘int QFontMetrics::width(const QString&, int) const’ is deprecated: Use QFontMetrics::horizontalAdvance [-Wdeprecated-declarations]
+  101 |   sd->setMinimumExtent( fm.width("100.00") );
+      |                         ~~~~~~~~^~~~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:59,
+                 from /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h:47,
+                 from /usr/include/qwt/qwt_null_paintdevice.h:15,
+                 from /usr/include/qwt/qwt_graphic.h:14,
+                 from /usr/include/qwt/qwt_legend_data.h:15,
+                 from /usr/include/qwt/qwt_plot_item.h:15,
+                 from /usr/include/qwt/qwt_plot_rasteritem.h:14,
+                 from /usr/include/qwt/qwt_plot_spectrogram.h:15,
+                 from /home/tim/Research/5G/projects/srsGUI/src/common/Spectrogramplot.cpp:2:
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h:106:9: note: declared here
+  106 |     int width(const QString &, int len = -1) const;
+      |         ^~~~~
+In file included from /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:29,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /usr/include/boost/date_time/time_clock.hpp:17,
+                 from /usr/include/boost/thread/thread_time.hpp:9,
+                 from /usr/include/boost/thread/lock_types.hpp:18,
+                 from /usr/include/boost/thread/pthread/thread_data.hpp:12,
+                 from /usr/include/boost/thread/thread_only.hpp:17,
+                 from /usr/include/boost/thread/thread.hpp:12,
+                 from /home/tim/Research/5G/projects/srsGUI/test/cxx/waterfallplot_test.cpp:6:
+/usr/include/boost/progress.hpp:23:1: note: ‘#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> or <boost/timer/progress_display.hpp> instead.’
+   23 | BOOST_HEADER_DEPRECATED( "the facilities in <boost/timer/timer.hpp> or <boost/timer/progress_display.hpp>" )
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/timer.hpp:21:1: note: ‘#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> instead.’
+   21 | BOOST_HEADER_DEPRECATED( "the facilities in <boost/timer/timer.hpp>" )
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:29,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /usr/include/boost/date_time/time_clock.hpp:17,
+                 from /usr/include/boost/thread/thread_time.hpp:9,
+                 from /usr/include/boost/thread/lock_types.hpp:18,
+                 from /usr/include/boost/thread/pthread/thread_data.hpp:12,
+                 from /usr/include/boost/thread/thread_only.hpp:17,
+                 from /usr/include/boost/thread/thread.hpp:12,
+                 from /home/tim/Research/5G/projects/srsGUI/test/cxx/complexplot_test.cpp:6:
+/usr/include/boost/progress.hpp:23:1: note: ‘#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> or <boost/timer/progress_display.hpp> instead.’
+   23 | BOOST_HEADER_DEPRECATED( "the facilities in <boost/timer/timer.hpp> or <boost/timer/progress_display.hpp>" )
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/timer.hpp:21:1: note: ‘#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> instead.’
+   21 | BOOST_HEADER_DEPRECATED( "the facilities in <boost/timer/timer.hpp>" )
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:29,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /usr/include/boost/date_time/time_clock.hpp:17,
+                 from /usr/include/boost/thread/thread_time.hpp:9,
+                 from /usr/include/boost/thread/lock_types.hpp:18,
+                 from /usr/include/boost/thread/pthread/thread_data.hpp:12,
+                 from /usr/include/boost/thread/thread_only.hpp:17,
+                 from /usr/include/boost/thread/thread.hpp:12,
+                 from /home/tim/Research/5G/projects/srsGUI/test/cxx/realplot_test.cpp:6:
+/usr/include/boost/progress.hpp:23:1: note: ‘#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> or <boost/timer/progress_display.hpp> instead.’
+   23 | BOOST_HEADER_DEPRECATED( "the facilities in <boost/timer/timer.hpp> or <boost/timer/progress_display.hpp>" )
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/timer.hpp:21:1: note: ‘#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> instead.’
+   21 | BOOST_HEADER_DEPRECATED( "the facilities in <boost/timer/timer.hpp>" )
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22,
+                 from /usr/include/boost/smart_ptr/detail/yield_k.hpp:23,
+                 from /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14,
+                 from /usr/include/boost/smart_ptr/detail/spinlock.hpp:42,
+                 from /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25,
+                 from /usr/include/boost/smart_ptr/shared_ptr.hpp:29,
+                 from /usr/include/boost/shared_ptr.hpp:17,
+                 from /usr/include/boost/date_time/time_clock.hpp:17,
+                 from /usr/include/boost/thread/thread_time.hpp:9,
+                 from /usr/include/boost/thread/lock_types.hpp:18,
+                 from /usr/include/boost/thread/pthread/thread_data.hpp:12,
+                 from /usr/include/boost/thread/thread_only.hpp:17,
+                 from /usr/include/boost/thread/thread.hpp:12,
+                 from /home/tim/Research/5G/projects/srsGUI/test/cxx/scatterplot_test.cpp:6:
+/usr/include/boost/progress.hpp:23:1: note: ‘#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> or <boost/timer/progress_display.hpp> instead.’
+   23 | BOOST_HEADER_DEPRECATED( "the facilities in <boost/timer/timer.hpp> or <boost/timer/progress_display.hpp>" )
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/timer.hpp:21:1: note: ‘#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> instead.’
+   21 | BOOST_HEADER_DEPRECATED( "the facilities in <boost/timer/timer.hpp>" )
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
